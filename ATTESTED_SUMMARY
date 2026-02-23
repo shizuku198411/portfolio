@@ -38,5 +38,24 @@
     "session_id": "578619ea5943b883ff86ccf4e7dd6d37",
     "timestamp": "2026-02-23T09:46:59Z",
     "verify_ok": true
+  },
+  {
+    "attestation_pass": true,
+    "commit_sha": [
+      "357ef45482b7e012cba890161581483b36eb1f4d"
+    ],
+    "commit_url": [
+      "https://github.com/shizuku198411/portfolio/commit/357ef45482b7e012cba890161581483b36eb1f4d"
+    ],
+    "policy_checked": true,
+    "policy_id": "portfolio-policy",
+    "policy_match": true,
+    "policy_path": "attest/policy.yaml",
+    "policy_version": "1.0.0",
+    "repo": "shizuku198411/portfolio",
+    "ruleset_hash": "sha256:6311fdcb8d744fa90fc7be5c0a52f05c59af11c42bdfeca828e32c21027a511e",
+    "session_id": "a7107137f3fb5b460c2d63819b6f12d4",
+    "timestamp": "2026-02-23T12:24:44Z",
+    "verify_ok": true
   }
 ]
