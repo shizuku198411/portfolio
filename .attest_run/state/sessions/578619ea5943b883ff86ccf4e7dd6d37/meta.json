@@ -1,0 +1,14 @@
+{
+  "session_id": "578619ea5943b883ff86ccf4e7dd6d37",
+  "started_at": "2026-02-23T09:11:52Z",
+  "workspace": {
+    "host_path": "/home/pyxgun/code/agentless_attest/portfolio",
+    "container_path": "/workspace"
+  },
+  "docker": {
+    "container_id": "85a3c8c052848aa825331b9554091de3f909e8d72c3ad4e1f27e08e0548878c4",
+    "image": "attested_base:latest",
+    "reused": true
+  },
+  "policy": {}
+}
