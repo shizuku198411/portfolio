@@ -5,7 +5,7 @@
       <div class="hero__top">
         <div class="hero__identity">
           <p class="kicker">Network / Security / Low-level Engineer</p>
-          <h1 class="title">Shizuku</h1>
+          <h1 class="title">Seiji Matsuoka</h1>
           <p class="subtitle">
             コンテナランタイム/カーネルといった低レイヤー実装を主とし、
             ZeroTrustや監査といった観点でのセキュリティ強化を目指しています。
@@ -22,9 +22,6 @@
             <a class="ext" href="https://github.com/shizuku198411" target="_blank" rel="noreferrer">
               GitHub <span class="ext__icon" aria-hidden="true">↗</span>
             </a>
-            <a class="ext" href="https://x.com/shizuku198411" target="_blank" rel="noreferrer">
-              X <span class="ext__icon" aria-hidden="true">↗</span>
-            </a>
             <a class="ext" href="https://www.linkedin.com/in/seiji-matsuoka-028b503ab" target="_blank" rel="noreferrer">
               LinkedIn <span class="ext__icon" aria-hidden="true">↗</span>
             </a>
@@ -32,13 +29,6 @@
         </div>
       </div>
 
-      <ul class="pillrow" aria-label="Core skills">
-        <li class="pill">Linux</li>
-        <li class="pill">Container Runtime</li>
-        <li class="pill">RISC-V</li>
-        <li class="pill">Zero Trust</li>
-        <li class="pill">Attestation</li>
-      </ul>
     </header>
 
     <!-- Featured Works -->
@@ -105,26 +95,62 @@
 <script setup>
 const featured = [
   {
+    id: 'raind',
     title: 'Raind',
     kind: 'Container Runtime',
-    desc: 'Zero Trust指向コンテナランタイム',
-    tech: ['Go', 'Vue', 'Container', 'ZeroTrust'],
+    desc: 'Zero Trust 指向のコンテナランタイム。ランタイム層でネットワーク制御と通信可視化を実装。',
+    tech: [
+      'Linux',
+      'OCI',
+      'Namespaces',
+      'cgroups',
+      'mTLS',
+    ],
+    highlights: [
+      'ランタイム層でのネットワークポリシー制御',
+      '通信ログ/監査ログの可視化',
+      'CLI / Daemon / WebUI 分離構成',
+    ],
     repo: 'https://github.com/shizuku198411/Raind',
     demo: null,
   },
   {
-    title: 'AquaCore',
-    kind: 'Low-level',
-    desc: 'RISC-V 32bit向けマイクロカーネル',
-    tech: ['C', 'RISC-V', 'QEMU', 'OpenSBI'],
+    id: 'aqua-core',
+    title: 'Aqua-Core',
+    kind: 'Microkernel',
+    desc: 'RISC-V 32bit 向けマイクロカーネル。スケジューラ、VFS、ネットワークまで含む実装。',
+    tech: [
+      'RISC-V',
+      'Microkernel',
+      'VFS',
+      'virtio-net',
+      'QEMU',
+    ],
+    highlights: [
+      'プリエンプティブスケジューリング',
+      'VFS + 永続/揮発FS実装',
+      'ネットワークスタック統合',
+    ],
     repo: 'https://github.com/shizuku198411/Aqua-Core',
     demo: null,
   },
   {
-    title: 'Session Attested',
-    kind: 'attestation',
-    desc: '開発作業における実行プロセスの監査/署名による証跡生成',
-    tech: ['Go', 'attestation', 'LSM', 'verification'],
+    id: 'sessionattested',
+    title: 'SessionAttested',
+    kind: 'Security Tooling',
+    desc: '開発セッションの実行・書き込みをホスト側で監査し、署名付き証跡を生成するPoC。',
+    tech: [
+      'Linux',
+      'eBPF',
+      'LSM',
+      'Container',
+      'Attestation',
+    ],
+    highlights: [
+      'ホスト側でのプロセス監査',
+      'ポリシー評価付きセッション検証',
+      'コミット連携の署名付き証跡',
+    ],
     repo: 'https://github.com/shizuku198411/SessionAttested',
     demo: null,
   },
@@ -132,8 +158,6 @@ const featured = [
 </script>
 
 <style scoped>
-/* Home専用の最小追加。全体トーンは base.css の変数に寄せる */
-
 .home {
   padding-top: 8px;
 }

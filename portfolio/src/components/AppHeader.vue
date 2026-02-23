@@ -6,11 +6,8 @@ import { RouterLink } from 'vue-router';
     <header>
         <div class="container header__inner">
             <div class="header__brand">
-                <RouterLink to="/">Shizuku</RouterLink>
-            </div>
-            <nav class="header__nav">
                 <RouterLink to="/">Home</RouterLink>
-            </nav>
+            </div>
         </div>
     </header>
 </template>
