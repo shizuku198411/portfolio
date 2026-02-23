@@ -15,6 +15,7 @@ import GithubLanguages from '../components/GithubLanguages.vue'
       <div class="actions">
         <RouterLink class="btn" to="/">Home</RouterLink>
         <RouterLink class="btn" to="/works">Works</RouterLink>
+        <RouterLink class="btn" to="/security">SecurityNotes</RouterLink>
       </div>
     </header>
 

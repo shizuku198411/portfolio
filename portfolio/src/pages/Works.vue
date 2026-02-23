@@ -11,6 +11,7 @@
       <div class="actions">
         <RouterLink class="btn" to="/">Home</RouterLink>
         <RouterLink class="btn" to="/about">About</RouterLink>
+        <RouterLink class="btn" to="/security">SecurityNotes</RouterLink>
       </div>
     </header>
 
@@ -51,7 +52,7 @@
     </section>
 
     <section class="grid">
-      <article v-for="w in filtered" :key="w.id" class="card work">
+      <article v-for="w in filtered" :key="w.id" class="card work" :id="w.id">
         <div class="work__top">
           <div>
             <h2 class="work__title">{{ w.title }}</h2>

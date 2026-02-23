@@ -3,6 +3,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../pages/Home.vue'
 import Works from '../pages/Works.vue'
 import About from '../pages/About.vue'
+import SecurityNotes from '../pages/SecurityNotes.vue'
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -10,6 +11,7 @@ const router = createRouter({
     { path: '/', name: 'home', component: Home },
     { path: '/works', name: 'works', component: Works },
     { path: '/about', name: 'about', component: About },
+    { path: '/security', name: 'security', component: SecurityNotes },
   ],
   scrollBehavior() {
     return { top: 0 }

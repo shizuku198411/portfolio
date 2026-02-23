@@ -16,6 +16,7 @@
           <div class="btnrow">
             <RouterLink class="btn btn--primary" to="/works">Works</RouterLink>
             <RouterLink class="btn" to="/about">About</RouterLink>
+            <RouterLink class="btn" to="/security">SecurityNotes</RouterLink>
           </div>
 
           <div class="linkrow">
