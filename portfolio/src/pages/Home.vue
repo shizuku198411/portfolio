@@ -92,7 +92,7 @@
   </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const featured = [
   {
     id: 'raind',
