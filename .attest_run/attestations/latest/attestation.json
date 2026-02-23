@@ -3,25 +3,33 @@
   "attestation_type": "non_agent_direct_write",
   "subject": {
     "repo": "shizuku198411/portfolio",
-    "commit_sha": "87f249bb9bd3c7165d0ab5095751dcf252f3d16b",
+    "commit_sha": "23e9cf06149858030031cbe41faa1740eefc3868",
     "ref": ""
   },
   "session": {
-    "session_id": "4b05c02cdc3c28c64d175cb74c0ac71c",
+    "session_id": "578619ea5943b883ff86ccf4e7dd6d37",
     "workspace": {
-      "host_path": ".",
+      "host_path": "/home/pyxgun/code/agentless_attest/portfolio",
       "container_path": "/workspace"
     },
     "commit_binding": {
-      "commit_sha": "87f249bb9bd3c7165d0ab5095751dcf252f3d16b",
-      "repo_path": "/workspace",
-      "created_rfc3339": "2026-02-23T09:01:16Z"
+      "commit_sha": "23e9cf06149858030031cbe41faa1740eefc3868",
+      "parent_sha": "16e772413e877f9e6ca174f9c2585b06e9499615",
+      "repo_path": ".",
+      "created_rfc3339": "2026-02-23T09:46:25Z"
     },
     "commit_bindings": [
       {
-        "commit_sha": "87f249bb9bd3c7165d0ab5095751dcf252f3d16b",
-        "repo_path": "/workspace",
-        "created_rfc3339": "2026-02-23T09:01:16Z"
+        "commit_sha": "16e772413e877f9e6ca174f9c2585b06e9499615",
+        "parent_sha": "5bb42bd4ad51ffd7bfe0b7b6f190dd251009e352",
+        "repo_path": ".",
+        "created_rfc3339": "2026-02-23T09:18:52Z"
+      },
+      {
+        "commit_sha": "23e9cf06149858030031cbe41faa1740eefc3868",
+        "parent_sha": "16e772413e877f9e6ca174f9c2585b06e9499615",
+        "repo_path": ".",
+        "created_rfc3339": "2026-02-23T09:46:25Z"
       }
     ]
   },
@@ -34,7 +42,7 @@
     },
     "developer_container": {
       "runtime": "docker",
-      "container_id": "619b28ec845f02e53a1ea0e5a2641089c432d138f46b0bded96e6d1503483efa",
+      "container_id": "85a3c8c052848aa825331b9554091de3f909e8d72c3ad4e1f27e08e0548878c4",
       "image": {
         "name": "attested_base:latest"
       }
@@ -59,24 +67,29 @@
   },
   "audit_summary": {
     "window": {
-      "start_rfc3339": "2026-02-23T08:33:18Z",
-      "end_rfc3339": "2026-02-23T09:01:27Z"
+      "start_rfc3339": "2026-02-23T09:12:03Z",
+      "end_rfc3339": "2026-02-23T09:46:36Z"
     },
     "exec_observed": {
-      "count": 5105,
-      "identity_unresolved": 14,
+      "count": 2815,
+      "identity_unresolved": 7,
       "identity_unresolved_hints": [
-        "pid=402814 comm=node fn=/home/dev/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/bin/remote-cli/git",
-        "pid=402814 comm=node fn=/usr/local/sbin/git",
-        "pid=402814 comm=node fn=/usr/local/bin/git",
-        "pid=402814 comm=node fn=/usr/sbin/git",
-        "pid=403407 comm=dpkg fn=/usr/sbin/rm",
-        "pid=403416 comm=dpkg fn=/usr/sbin/rm",
-        "pid=403776 comm=dpkg fn=/usr/sbin/dpkg-split",
-        "pid=404071 comm=dpkg fn=/usr/sbin/dpkg-split"
+        "pid=408964 comm=dpkg fn=/usr/sbin/rm",
+        "pid=408965 comm=dpkg fn=/usr/sbin/dpkg-split",
+        "pid=409592 comm=dpkg fn=/usr/sbin/dpkg-split",
+        "pid=409614 comm=dpkg fn=/usr/sbin/dpkg-split",
+        "pid=410111 comm=tokio-runtime-w fn=/usr/local/sbin/docker",
+        "pid=410111 comm=tokio-runtime-w fn=/usr/local/bin/docker",
+        "pid=410111 comm=tokio-runtime-w fn=/usr/sbin/docker"
       ]
     },
     "executed_identities": [
+      {
+        "sha256": "sha256:015d2cddcb65b2e494075f51ca928bd52eb54f8e27199fcf35e513b896170676",
+        "inode": 3035,
+        "dev": 2050,
+        "path_hint": "/usr/local/bin/attested"
+      },
       {
         "sha256": "sha256:01ad6d2d75865c7c828dceabf3908c282ad48c8af059c04c16d9c38b98d6c6b3",
         "inode": 9386954,
@@ -157,7 +170,7 @@
       },
       {
         "sha256": "sha256:26ce6cceb17ac710ee7253c49ea825c618d4f9e49a135d52b4edce336c40f620",
-        "inode": 8474921,
+        "inode": 8474926,
         "dev": 1048687,
         "path_hint": "/home/dev/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/node_modules/@vscode/ripgrep/bin/rg"
       },
@@ -169,7 +182,7 @@
       },
       {
         "sha256": "sha256:2bfe7e6f1939a446c2a4d21998202a247ce58edb1890e10d97b633a91e5a71b5",
-        "inode": 8472765,
+        "inode": 8472768,
         "dev": 1048687,
         "path_hint": "/home/dev/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/out/vs/base/node/cpuUsage.sh"
       },
@@ -181,25 +194,25 @@
       },
       {
         "sha256": "sha256:2c5854c5cdc82433b76bdb603c3f98610659a8b57bae78fcff557ef74393490e",
-        "inode": 8475575,
+        "inode": 8475638,
         "dev": 1048687,
         "path_hint": "/var/lib/dpkg/tmp.ci/preinst"
       },
       {
         "sha256": "sha256:2c5854c5cdc82433b76bdb603c3f98610659a8b57bae78fcff557ef74393490e",
-        "inode": 8475603,
+        "inode": 8475666,
         "dev": 1048687,
         "path_hint": "/var/lib/dpkg/tmp.ci/preinst"
       },
       {
         "sha256": "sha256:2c5854c5cdc82433b76bdb603c3f98610659a8b57bae78fcff557ef74393490e",
-        "inode": 8476261,
+        "inode": 8476324,
         "dev": 1048687,
         "path_hint": "/var/lib/dpkg/tmp.ci/preinst"
       },
       {
         "sha256": "sha256:2c5854c5cdc82433b76bdb603c3f98610659a8b57bae78fcff557ef74393490e",
-        "inode": 8476287,
+        "inode": 8476351,
         "dev": 1048687,
         "path_hint": "/var/lib/dpkg/tmp.ci/preinst"
       },
@@ -225,7 +238,7 @@
         "sha256": "sha256:44699b32c0f2727905800bd05bc09c72c20946f4ad68a7c9a58aaba4c0958620",
         "inode": 3268,
         "dev": 2050,
-        "path_hint": "/usr/bin/docker"
+        "path_hint": "/bin/docker"
       },
       {
         "sha256": "sha256:45ec8c948cb0f17b38f27b4d8235596b17ece3b7eea5afcbb3be8b1ee5a98c77",
@@ -294,12 +307,6 @@
         "path_hint": "/var/lib/dpkg/info/python3.postinst"
       },
       {
-        "sha256": "sha256:5dee4411872ed4a607bafa536ac538044ee19d75f895dbfdcd70242a4f6e673f",
-        "inode": 3035,
-        "dev": 2050,
-        "path_hint": "/usr/local/bin/attested"
-      },
-      {
         "sha256": "sha256:5e2a3cf707727760958c6fbb1b66eeaedb442d8aba170a436691fe6d5ab3a261",
         "inode": 4143898,
         "dev": 2050,
@@ -319,7 +326,7 @@
       },
       {
         "sha256": "sha256:62dbbc4da520c1b2923a862487e68714542f364bd600ea3a3049e9bd3ab59c5d",
-        "inode": 8474872,
+        "inode": 8474877,
         "dev": 1048687,
         "path_hint": "/home/dev/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/node_modules/@vscode/vsce-sign/bin/vsce-sign"
       },
@@ -328,12 +335,6 @@
         "inode": 2502,
         "dev": 2050,
         "path_hint": "/usr/bin/su"
-      },
-      {
-        "sha256": "sha256:69362351fdf4a07c10cc7caf6c5cd3c2b337401e4fac066b0542fb09810b46c3",
-        "inode": 8980717,
-        "dev": 1048687,
-        "path_hint": "/home/dev/.npm/_npx/1415fee72ff6294b/node_modules/.bin/create-vite"
       },
       {
         "sha256": "sha256:6ef49bc10feb2b9c4a3a8377a6d29b59ac1f59b041e1420f46e0cdaab9d6d962",
@@ -391,7 +392,7 @@
       },
       {
         "sha256": "sha256:8e5f6f3429f8cdbe693cdc29904e9d5a7b127a494bd15c804bd54c7403bfcbe7",
-        "inode": 8485930,
+        "inode": 8486031,
         "dev": 1048687,
         "path_hint": "/usr/bin/npm"
       },
@@ -505,7 +506,7 @@
       },
       {
         "sha256": "sha256:b5bcad68e567f13e111d24b5dc9a7abc544b4dc81c4817ab5518789461581ac6",
-        "inode": 8471672,
+        "inode": 8471676,
         "dev": 1048687,
         "path_hint": "/home/dev/.vscode-server/code-072586267e68ece9a47aa43f8c108e0dcbf44622"
       },
@@ -553,7 +554,7 @@
       },
       {
         "sha256": "sha256:c8c89c91b842b5852dea0863836e24d38fec55c263a5b4377e54b40886a1cdb9",
-        "inode": 8471682,
+        "inode": 8471685,
         "dev": 1048687,
         "path_hint": "/home/dev/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/node"
       },
@@ -631,7 +632,7 @@
       },
       {
         "sha256": "sha256:ee2d5f97c1dbc39fc28f66383e173ffae55420512ec0f420ff46758e2f1111c9",
-        "inode": 8472755,
+        "inode": 8472758,
         "dev": 1048687,
         "path_hint": "/home/dev/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/bin/code-server"
       },
@@ -648,12 +649,6 @@
         "path_hint": "/sbin/ldconfig.real"
       },
       {
-        "sha256": "sha256:f66620988fc269406d2daecafa6de65e96539fe48c7d7e5fce1657c858609c88",
-        "inode": 30842,
-        "dev": 2050,
-        "path_hint": "/usr/bin/ssh"
-      },
-      {
         "sha256": "sha256:fa03478846d229651a3c6aa64833ba2c6cbf580a798b92bd8f47c7480bafb5d8",
         "inode": 7443416,
         "dev": 2050,
@@ -667,12 +662,18 @@
       }
     ],
     "workspace_writes_observed": {
-      "count": 1430,
+      "count": 61,
       "by_op": {
-        "open_write": 1430
+        "open_write": 61
       }
     },
     "writer_identities": [
+      {
+        "sha256": "sha256:15375a031fa7715c76c4fe41dc65ecff5a9296eedbc763f93ec97c542b49931f",
+        "inode": 7439781,
+        "dev": 2050,
+        "path_hint": "/workspace/portfolio/node_modules/@esbuild/linux-arm64/bin/esbuild"
+      },
       {
         "sha256": "sha256:2b0f6efd95c31c5538cc0a9042d5d13b7328cffcfdcc409f2e2ef336c4402086",
         "inode": 54898,
@@ -686,18 +687,24 @@
         "path_hint": "/usr/bin/git"
       },
       {
+        "sha256": "sha256:aa6540695d076182256dd6e96c8b302e4d56381e3000bbfd5c71bbdfe94a4942",
+        "inode": 11002,
+        "dev": 2050,
+        "path_hint": "/usr/lib/git-core/git"
+      },
+      {
         "sha256": "sha256:c8c89c91b842b5852dea0863836e24d38fec55c263a5b4377e54b40886a1cdb9",
-        "inode": 8471682,
+        "inode": 8471685,
         "dev": 1048687,
         "path_hint": "/home/dev/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/node"
       }
     ]
   },
   "integrity": {
-    "event_root": "7062c61a690e00b17e2f2c9ebbc91646cabdd91dcfd8d4f637cee9a3f399ed29",
+    "event_root": "11a17f2c9283254e01a318115ac6201ed5effca94f1f31c38d134e52369b8f86",
     "event_root_alg": "hash_chain_sha256",
-    "event_count": 6535,
-    "collector_log_id": "ebpf-lsm:4b05c02cdc3c28c64d175cb74c0ac71c"
+    "event_count": 2876,
+    "collector_log_id": "ebpf-lsm:578619ea5943b883ff86ccf4e7dd6d37"
   },
   "conclusion": {
     "pass": true,
@@ -707,7 +714,7 @@
       }
     ]
   },
-  "issued_at": "2026-02-23T09:02:57Z",
+  "issued_at": "2026-02-23T09:46:55Z",
   "issuer": {
     "name": "portfolio-attestor",
     "key_id": "portfolio-key-1",
