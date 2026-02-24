@@ -3,39 +3,27 @@
   "attestation_type": "non_agent_direct_write",
   "subject": {
     "repo": "shizuku198411/portfolio",
-    "commit_sha": "a8329c7a20602fa556b5ab0eae7028578e494424",
+    "commit_sha": "6269e0e68189bb5f3d357f18dc88d6d98e43e801",
     "ref": ""
   },
   "session": {
-    "session_id": "79f2d18914a4dea5fa9ebc178de8f05b",
+    "session_id": "103943beafd7b3a27ee8f8705cb9a69e",
     "workspace": {
       "host_path": "/home/pyxgun/code/agentless_attest/portfolio",
       "container_path": "/workspace"
     },
     "commit_binding": {
-      "commit_sha": "a8329c7a20602fa556b5ab0eae7028578e494424",
-      "parent_sha": "5e7ee7d0bd1cbc0c55ae6da6af5aa08f2a7b0eca",
+      "commit_sha": "6269e0e68189bb5f3d357f18dc88d6d98e43e801",
+      "parent_sha": "b044995b3ded9c9284e7d54591ccc29809d2db38",
       "repo_path": ".",
-      "created_rfc3339": "2026-02-23T13:08:59Z"
+      "created_rfc3339": "2026-02-24T03:23:56Z"
     },
     "commit_bindings": [
       {
-        "commit_sha": "6cc2b9112c55d6c458980c831d58b6ecdb3a2306",
-        "parent_sha": "72581ddd833cec099991494e8e44b3ba83017d11",
+        "commit_sha": "6269e0e68189bb5f3d357f18dc88d6d98e43e801",
+        "parent_sha": "b044995b3ded9c9284e7d54591ccc29809d2db38",
         "repo_path": ".",
-        "created_rfc3339": "2026-02-23T12:42:30Z"
-      },
-      {
-        "commit_sha": "5e7ee7d0bd1cbc0c55ae6da6af5aa08f2a7b0eca",
-        "parent_sha": "6cc2b9112c55d6c458980c831d58b6ecdb3a2306",
-        "repo_path": ".",
-        "created_rfc3339": "2026-02-23T12:47:30Z"
-      },
-      {
-        "commit_sha": "a8329c7a20602fa556b5ab0eae7028578e494424",
-        "parent_sha": "5e7ee7d0bd1cbc0c55ae6da6af5aa08f2a7b0eca",
-        "repo_path": ".",
-        "created_rfc3339": "2026-02-23T13:08:59Z"
+        "created_rfc3339": "2026-02-24T03:23:56Z"
       }
     ]
   },
@@ -73,26 +61,21 @@
   },
   "audit_summary": {
     "window": {
-      "start_rfc3339": "2026-02-23T12:37:54Z",
-      "end_rfc3339": "2026-02-23T13:09:01Z"
+      "start_rfc3339": "2026-02-24T03:22:27Z",
+      "end_rfc3339": "2026-02-24T03:23:58Z"
     },
     "exec_observed": {
-      "count": 1595,
-      "identity_unresolved": 4,
+      "count": 260,
+      "identity_unresolved": 5,
       "identity_unresolved_hints": [
-        "pid=420734 comm=node fn=/home/dev/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/bin/remote-cli/git",
-        "pid=420734 comm=node fn=/usr/local/sbin/git",
-        "pid=420734 comm=node fn=/usr/local/bin/git",
-        "pid=420734 comm=node fn=/usr/sbin/git"
+        "pid=458767 comm=run-parts fn=/etc/update-motd.d/60-unminimize",
+        "pid=458968 comm=node fn=/home/dev/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/bin/remote-cli/git",
+        "pid=458968 comm=node fn=/usr/local/sbin/git",
+        "pid=458968 comm=node fn=/usr/local/bin/git",
+        "pid=458968 comm=node fn=/usr/sbin/git"
       ]
     },
     "executed_identities": [
-      {
-        "sha256": "sha256:015d2cddcb65b2e494075f51ca928bd52eb54f8e27199fcf35e513b896170676",
-        "inode": 3035,
-        "dev": 2050,
-        "path_hint": "/usr/local/bin/attested"
-      },
       {
         "sha256": "sha256:0b3c9b95118dbb6c31848729f708607cdc696631a2a9cb33fe65164b1c169f38",
         "inode": 2304,
@@ -104,12 +87,6 @@
         "inode": 1598,
         "dev": 2050,
         "path_hint": "/etc/update-motd.d/50-motd-news"
-      },
-      {
-        "sha256": "sha256:15375a031fa7715c76c4fe41dc65ecff5a9296eedbc763f93ec97c542b49931f",
-        "inode": 7439781,
-        "dev": 2050,
-        "path_hint": "/workspace/portfolio/node_modules/@esbuild/linux-arm64/bin/esbuild"
       },
       {
         "sha256": "sha256:1ae5e306bce2eca707ff5cd25ede118b24a80ca85cd85a6eb7d658d81abd3dfa",
@@ -128,12 +105,6 @@
         "inode": 8474926,
         "dev": 1048687,
         "path_hint": "/home/dev/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/node_modules/@vscode/ripgrep/bin/rg"
-      },
-      {
-        "sha256": "sha256:2b0f6efd95c31c5538cc0a9042d5d13b7328cffcfdcc409f2e2ef336c4402086",
-        "inode": 54898,
-        "dev": 2050,
-        "path_hint": "/usr/bin/node"
       },
       {
         "sha256": "sha256:2bfe7e6f1939a446c2a4d21998202a247ce58edb1890e10d97b633a91e5a71b5",
@@ -208,12 +179,6 @@
         "path_hint": "/usr/bin/chmod"
       },
       {
-        "sha256": "sha256:8e5f6f3429f8cdbe693cdc29904e9d5a7b127a494bd15c804bd54c7403bfcbe7",
-        "inode": 8486031,
-        "dev": 1048687,
-        "path_hint": "/usr/bin/npm"
-      },
-      {
         "sha256": "sha256:93fd34381ad0ba02987818df0f4e6dfdf47d3a606ffd28749e8df48aedde5a68",
         "inode": 2071,
         "dev": 2050,
@@ -226,28 +191,22 @@
         "path_hint": "/usr/bin/dirname"
       },
       {
-        "sha256": "sha256:9d3b4c4c9f60e389062e77b22493316123b92ff19327d30437e5e4583933a738",
-        "inode": 2542,
-        "dev": 2050,
-        "path_hint": "/usr/bin/tail"
-      },
-      {
         "sha256": "sha256:a0bf35fb6e8053a4b9026090016d0e8d1e870705cde7c9f750d58445c4aa700d",
         "inode": 2330,
         "dev": 2050,
         "path_hint": "/usr/bin/run-parts"
       },
       {
-        "sha256": "sha256:a241b34559d0bf762359bdc120babccab6873b8e97b0fae206523fac30126f1e",
-        "inode": 5921,
-        "dev": 2050,
-        "path_hint": "/usr/bin/ldd"
-      },
-      {
         "sha256": "sha256:a95219a95160120ffe2f418bb4302280da98184d0e08b4e02c1b2459de7efa69",
         "inode": 2564,
         "dev": 2050,
         "path_hint": "/usr/bin/touch"
+      },
+      {
+        "sha256": "sha256:aa340d4092ed32704d8cedc21cb322862860651fc54264569ce7027039f745ca",
+        "inode": 1722,
+        "dev": 2050,
+        "path_hint": "/usr/local/bin/attested"
       },
       {
         "sha256": "sha256:aa6540695d076182256dd6e96c8b302e4d56381e3000bbfd5c71bbdfe94a4942",
@@ -260,12 +219,6 @@
         "inode": 11002,
         "dev": 2050,
         "path_hint": "/usr/lib/git-core/git"
-      },
-      {
-        "sha256": "sha256:af1cb469d4a017e28359248cf8ae16a08b3fe013c54b243210ef5b9f74158a51",
-        "inode": 2020,
-        "dev": 2050,
-        "path_hint": "/usr/bin/id"
       },
       {
         "sha256": "sha256:af955ef55333c8fc9c5aa50df91ad1a629d9a79a9afa125cd5e9629585f78015",
@@ -284,12 +237,6 @@
         "inode": 5135,
         "dev": 2050,
         "path_hint": "/usr/bin/getconf"
-      },
-      {
-        "sha256": "sha256:bfd5df90c7f070feab584435f106f254ffffaa268a04de5b5c3bd61d59c092f3",
-        "inode": 10387,
-        "dev": 2050,
-        "path_hint": "/sbin/ldconfig"
       },
       {
         "sha256": "sha256:c7507963900c83fffa7ca018c5ab28c79804e9f4736ef67e4cbf263acbc82376",
@@ -328,22 +275,10 @@
         "path_hint": "/usr/bin/date"
       },
       {
-        "sha256": "sha256:dc3a00a8bbe51dad1e958d6c5f73a59a6ed61a9e37acec36a78a1e817e5cadd4",
-        "inode": 1596,
-        "dev": 2050,
-        "path_hint": "/etc/update-motd.d/10-help-text"
-      },
-      {
         "sha256": "sha256:e0cf7e677aa546fad67b1579ca1cabb9364caebf7988a59018d0a4e8376cefe7",
         "inode": 1920,
         "dev": 2050,
         "path_hint": "/usr/bin/env"
-      },
-      {
-        "sha256": "sha256:e1dc5ce642b5de0eb7c0c20d3362fd7c9d1748befed8695586f59626108abbd9",
-        "inode": 5517798,
-        "dev": 1048687,
-        "path_hint": "/etc/update-motd.d/60-unminimize"
       },
       {
         "sha256": "sha256:e70291f7cb9dfc5d6a4182a364582a5941cd4845c9416729dd9e47994ba26575",
@@ -358,30 +293,6 @@
         "path_hint": "/home/dev/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/bin/code-server"
       },
       {
-        "sha256": "sha256:f15053488b3c49d16eb4b0da25593b459a79839248381f6aa61a876bcce54966",
-        "inode": 47167,
-        "dev": 2050,
-        "path_hint": "/usr/local/bin/node"
-      },
-      {
-        "sha256": "sha256:f2a4948219b81a153d8cafe85383acb2f734cdccac00b633891da1cc8532f8f9",
-        "inode": 10389,
-        "dev": 2050,
-        "path_hint": "/sbin/ldconfig.real"
-      },
-      {
-        "sha256": "sha256:f66620988fc269406d2daecafa6de65e96539fe48c7d7e5fce1657c858609c88",
-        "inode": 30842,
-        "dev": 2050,
-        "path_hint": "/usr/bin/ssh"
-      },
-      {
-        "sha256": "sha256:fa03478846d229651a3c6aa64833ba2c6cbf580a798b92bd8f47c7480bafb5d8",
-        "inode": 7443416,
-        "dev": 2050,
-        "path_hint": "/workspace/portfolio/node_modules/.bin/vite"
-      },
-      {
         "sha256": "sha256:fb7efa5f6b958b44258b08ab860b086aaa0446b8b50564b3d43367b2ba4ed407",
         "inode": 1993,
         "dev": 2050,
@@ -389,29 +300,17 @@
       }
     ],
     "workspace_writes_observed": {
-      "count": 56,
+      "count": 8,
       "by_op": {
-        "open_write": 56
+        "open_write": 8
       }
     },
     "writer_identities": [
-      {
-        "sha256": "sha256:2b0f6efd95c31c5538cc0a9042d5d13b7328cffcfdcc409f2e2ef336c4402086",
-        "inode": 54898,
-        "dev": 2050,
-        "path_hint": "/usr/bin/node"
-      },
       {
         "sha256": "sha256:aa6540695d076182256dd6e96c8b302e4d56381e3000bbfd5c71bbdfe94a4942",
         "inode": 10999,
         "dev": 2050,
         "path_hint": "/usr/bin/git"
-      },
-      {
-        "sha256": "sha256:aa6540695d076182256dd6e96c8b302e4d56381e3000bbfd5c71bbdfe94a4942",
-        "inode": 11002,
-        "dev": 2050,
-        "path_hint": "/usr/lib/git-core/git"
       },
       {
         "sha256": "sha256:c8c89c91b842b5852dea0863836e24d38fec55c263a5b4377e54b40886a1cdb9",
@@ -422,10 +321,10 @@
     ]
   },
   "integrity": {
-    "event_root": "d7281f55a1b0c93d8401fa776469e434e68a91fbfead24320041432717309fc3",
+    "event_root": "34343013e9dbb5872ba2cc998b096a74a212cfb4d9b8697cf7c671e14d9800ae",
     "event_root_alg": "hash_chain_sha256",
-    "event_count": 1651,
-    "collector_log_id": "ebpf-lsm:79f2d18914a4dea5fa9ebc178de8f05b"
+    "event_count": 268,
+    "collector_log_id": "ebpf-lsm:103943beafd7b3a27ee8f8705cb9a69e"
   },
   "conclusion": {
     "pass": true,
@@ -435,7 +334,7 @@
       }
     ]
   },
-  "issued_at": "2026-02-23T13:09:08Z",
+  "issued_at": "2026-02-24T03:24:04Z",
   "issuer": {
     "name": "portfolio-attestor",
     "key_id": "portfolio-key-1",
