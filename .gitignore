@@ -4,6 +4,7 @@
 .attest_run/state/sessions/*/collector.log
 .attest_run/keys/attestation_priv.pem
 .attest_run/state/workspaces/
+.attest_run/webui/
 # session-attested:end
 
 .vscode/

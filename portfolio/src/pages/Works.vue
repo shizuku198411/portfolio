@@ -152,7 +152,7 @@ const works = [
         id: 'sessionattested',
         title: 'Session Attested - Development Session Host-Signed Audit Trail',
         kind: 'Attestation / Verification',
-        desc: '開発セッション中に実行されたプロセスと書き込み操作を観測し、署名付き証跡(attestation)を生成するツール',
+        desc: '開発セッション中に実行されたプロセスと書き込み操作を観測し、署名付き証跡(attestation)を生成するフレームワーク',
         tech: [
             'eBPF',
             'LSM',

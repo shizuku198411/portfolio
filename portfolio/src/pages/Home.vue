@@ -139,7 +139,7 @@ const featured = [
     id: 'sessionattested',
     title: 'SessionAttested',
     kind: 'Security Tooling',
-    desc: '開発セッションの実行・書き込みをホスト側で監査し、署名付き証跡を生成するPoC。',
+    desc: '開発セッションの実行・書き込みをホスト側で監査し、署名付き証跡を生成するフレームワーク。',
     tech: [
       'Linux',
       'eBPF',
